@@ -3,10 +3,14 @@ describe('PopDancer', function() {
   var popDancer, clock;
   var timeBetweenSteps = 100;
 
+
+
   beforeEach(function() {
 
     clock = sinon.useFakeTimers();
-    popDancer = new PopDancer(10, 20, timeBetweenSteps);
+
+    popDancer = new makePopDancer(10, 20, timeBetweenSteps);
+
     console.log('Tiny Dancer');
 
   });
