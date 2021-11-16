@@ -12,4 +12,3 @@ PopDancer.prototype.step = function () {
 
 
 
-{/*  */}

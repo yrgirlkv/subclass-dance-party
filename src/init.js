@@ -44,13 +44,11 @@ $(document).ready(function () {
     $('.blinky').css('left', '5%');
     $('.ricky').css('left', '90%');
     $('.pop').css('left', '45%');
-
-
-
-    // for (let v of window.childNodes) {
-    //   console.log('lining up' + v);
-    //   v.lineUp();
-    // }
   });
+
+  $('.dancers').on('mouseover', '.pop', function(event) {
+    $(this).remove();
+  });
+
 });
 
