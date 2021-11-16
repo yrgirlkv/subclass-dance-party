@@ -1,5 +1,6 @@
 var PopDancer = function (top, left, timeBetweenSteps) {
   Dancer.call(this, top, left, timeBetweenSteps);
+  this.$node.addClass('pop');
 
 };
 

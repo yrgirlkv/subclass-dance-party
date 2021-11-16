@@ -21,7 +21,30 @@ body, a:link, a:visited, a:active{
   background-color: #777;
 }
 .dancer{
-  border:10px solid red;
+  position:absolute;
+}
+
+
+.blinky{
+  border:10px solid blue;
   border-radius:10px;
   position:absolute;
+}
+
+.ricky{
+  height: 100px;
+  border-radius:10px;
+}
+
+
+.pop{
+  border:10px solid orange;
+  border-radius:10px;
+  position:absolute;
+}
+
+
+img {
+  max-width: 100%;
+  max-height: 100%;
 }

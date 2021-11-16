@@ -1,5 +1,7 @@
 var BlinkyDancer = function (top, left, timeBetweenSteps) {
   Dancer.call(this, top, left, timeBetweenSteps);
+  this.$node.addClass('blinky');
+  //
 
   // we plan to overwrite the step function below, but we still want the superclass step behavior to work,
   // so we must keep a copy of the old version of this function
@@ -18,10 +20,13 @@ var BlinkyDancer = function (top, left, timeBetweenSteps) {
 
 BlinkyDancer.prototype = Object.create(Dancer.prototype);
 
-// we forgot this mega important code that blocks lookups from reaching all the back to dancer - we want the looksups to stop here.
+// we forgot this mega important code that blocks lookups from reaching all the back to dancer - we want the looksups to stop here first.
 BlinkyDancer.prototype.constructor = BlinkyDancer;
 
+
 BlinkyDancer.prototype.step = function () {
+
   Dancer.prototype.step.call(this);
+
   this.$node.toggle();
 };
