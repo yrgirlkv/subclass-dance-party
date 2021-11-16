@@ -14,7 +14,6 @@ var makeDancer = function(top, left, timeBetweenSteps) {
 
 makeDancer.prototype.step = function () {
   var that = this;
-  console.log('outside setTimeout: ', that);
   setTimeout( function () {
     that.step();
   }, this.timeBetweenSteps);
