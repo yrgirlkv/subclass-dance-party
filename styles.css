@@ -20,7 +20,8 @@ body, a:link, a:visited, a:active{
 }
 
 .dancers {
-  padding:5px 12px;
+  margin: 5px;
+  padding: 5px 12px;
   height: 90%;
   width: 90%
 }
@@ -40,7 +41,7 @@ body, a:link, a:visited, a:active{
 .blinky{
   border:10px solid red;
   border-radius:10px;
-  position:absolute;
+  /* position:absolute; */
 }
 
 .ricky{

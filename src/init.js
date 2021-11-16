@@ -31,8 +31,8 @@ $(document).ready(function () {
     // make a dancer with a random position
     // call the contructor!!!! we were calling functional
     var dancer = new dancerMakerFunction(
-      $(".dancers").height() * Math.random(),
-      $(".dancers").width() * Math.random(),
+      $('.dancers').height() * Math.random(),
+      $('.dancers').width() * Math.random(),
       Math.random() * 1000
     );
     console.log('yes');
@@ -40,7 +40,11 @@ $(document).ready(function () {
   });
 
   $('.centerUp').on('click', function (event) {
-    $(''.dancer').css('border', '50px solid red');
+    // $('.blinky').css('float', 'right');
+    $('.blinky').css('left', '5%');
+    $('.ricky').css('left', '90%');
+    $('.pop').css('left', '45%');
+
 
 
     // for (let v of window.childNodes) {
