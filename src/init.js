@@ -18,6 +18,8 @@ $(document).ready(function () {
      *
      */
 
+
+
     // this needed to be 'dancer-maker-function-name'
     var dancerMakerFunctionName = $(this).data('dancer-maker-function-name');
 
@@ -25,17 +27,26 @@ $(document).ready(function () {
     var dancerMakerFunction = window[dancerMakerFunctionName];
 
 
-    // should we have an
-
 
     // make a dancer with a random position
     // call the contructor!!!! we were calling functional
     var dancer = new dancerMakerFunction(
-      $("body").height() * Math.random(),
-      $("body").width() * Math.random(),
+      $(".dancers").height() * Math.random(),
+      $(".dancers").width() * Math.random(),
       Math.random() * 1000
     );
-    $('body').append(dancer.$node);
+    console.log('yes');
+    $('.dancers').append(dancer.$node);
+  });
+
+  $('.centerUp').on('click', function (event) {
+    $(''.dancer').css('border', '50px solid red');
+
+
+    // for (let v of window.childNodes) {
+    //   console.log('lining up' + v);
+    //   v.lineUp();
+    // }
   });
 });
 

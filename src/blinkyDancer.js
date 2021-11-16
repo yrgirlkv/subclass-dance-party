@@ -30,3 +30,10 @@ BlinkyDancer.prototype.step = function () {
 
   this.$node.toggle();
 };
+
+BlinkyDancer.prototype.lineUp = function () {
+  $node.css({
+    'position': 'absolute',
+    'right': '0px'
+  });
+};
