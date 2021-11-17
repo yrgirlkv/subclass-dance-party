@@ -44,10 +44,23 @@ $(document).ready(function () {
     $('.blinky').css('left', '5%');
     $('.ricky').css('left', '90%');
     $('.pop').css('left', '45%');
+    $('.will').remove()
   });
 
   $('.dancers').on('mouseover', '.pop', function(event) {
     $(this).remove();
+  });
+
+  $('.addWill').on('click', function (event) {
+    var matches = $(".blinky");
+    for (let i = 0; i < matches.length; i++) {
+      $(matches[i]).toggle(true);
+      let top = $(matches[i]).position().top - 30;
+      let left = $(matches[i]).position().left - 75;
+      let currentWill = new willPresenter(top, left);
+      $('.dancers').append(currentWill.$node);
+
+    }
   });
 
 });
