@@ -44,7 +44,7 @@ $(document).ready(function () {
     $('.blinky').css('left', '5%');
     $('.ricky').css('left', '90%');
     $('.pop').css('left', '45%');
-    $('.will').remove()
+    $('.will').remove();
   });
 
   $('.dancers').on('mouseover', '.pop', function(event) {
@@ -52,7 +52,7 @@ $(document).ready(function () {
   });
 
   $('.addWill').on('click', function (event) {
-    var matches = $(".blinky");
+    var matches = $('.blinky');
     for (let i = 0; i < matches.length; i++) {
       $(matches[i]).toggle(true);
       let top = $(matches[i]).position().top - 30;
